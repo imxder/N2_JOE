@@ -1,0 +1,50 @@
+metodo GET
+
+curl http://localhost:5000/materiais
+
+
+metodo POST
+
+curl -d '{"material": {"name": "Lapis", "qtde": 6}}' -H "Content-Type: application/json" -X POST http://localhost:5000/materiais
+
+curl -d '{"material": {"name": "Tesoura", "qtde": 10}}' -H "Content-Type: application/json" -X POST http://localhost:5000/materiais
+
+curl -d '{"material": {"name": "Apontador", "qtde": 4}}' -H "Content-Type: application/json" -X POST http://localhost:5000/materiais
+
+curl -d '{"material": {"name": "Borracha", "qtde": 3}}' -H "Content-Type: application/json" -X POST http://localhost:5000/materiais
+
+curl -d '{"material": {"name": "Penal", "qtde": 3}}' -H "Content-Type: application/json" -X POST http://localhost:5000/materiais
+
+
+
+metodo PUT
+
+curl -X PUT -d '{"material": {"name": "Canetas", "qtde": 100}}' http://localhost:5000/materiais/0
+
+curl -X PUT -d '{"material": {"name": "Caderno", "qtde": 44}}' http://localhost:5000/materiais/1
+
+curl -X PUT -d '{"material": {"name": "Regua", "qtde": 100}}' http://localhost:5000/materiais/2
+
+curl -X PUT -d '{"material": {"name": "Giz", "qtde": 100}}' http://localhost:5000/materiais/3
+
+curl -X PUT -d '{"material": {"name": "Tinta", "qtde": 88}}' http://localhost:5000/materiais/4
+
+curl -X PUT -d '{"material": {"name": "Calculadora", "qtde": 39}}' http://localhost:5000/materiais/5
+
+
+metodo DELETE 
+
+curl -X DELETE http://localhost:5000/materiais/0
+
+curl -X DELETE http://localhost:5000/materiais/1
+
+curl -X DELETE http://localhost:5000/materiais/2
+
+curl -X DELETE http://localhost:5000/materiais/3
+
+curl -X DELETE http://localhost:5000/materiais/4
+
+curl -X DELETE http://localhost:5000/materiais/5
+
+
+
